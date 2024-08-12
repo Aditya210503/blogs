@@ -59,6 +59,9 @@ Create an alias for easier reference to your key:
 ```bash
 aws kms create-alias --alias-name alias/byok-mrk --target-key-id mrk-d58582b2563a40ef893d9181052130db
 ```
+Now paste your key from customer managed keys
+
+https://raw.githubusercontent.com/arinatechnologies/blogs/d0a1693dd66be52a3be039f94e482d5983cff645/images/keys%20part3/Step3%20Keys.webp
 
 Retrieve the parameters needed for importing your key:
 
@@ -87,6 +90,8 @@ export CLOUDHSM_PIN=cu_user1:acord12345
 **Step 5: Replicating Key to Another Region**
 
 Understand the mechanics of cross-Region replication, crucial for maintaining data consistency across geographical locations. Use AWS KMS’s built-in replication features to copy key material securely between regions, adhering strictly to AWS security protocols.
+
+https://raw.githubusercontent.com/arinatechnologies/blogs/d0a1693dd66be52a3be039f94e482d5983cff645/images/keys%20part3/Step5%20keys.webp
 
 [Read about Key Management](https://www.arinatechnologies.com/posts/cloudhsm)
 
